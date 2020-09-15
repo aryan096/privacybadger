@@ -115,6 +115,10 @@
         "message": "No <a target='_blank' title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>trackers</a> detected. Hooray for privacy!",
         "description": "Text shown in the popup when there are no trackers on the page."
     },
+    "popup_info_firstparty_protections": {
+        "message": "and is enforcing <a href='https://www.eff.org/deeplinks/2018/05/privacy-badger-rolls-out-new-ways-fight-facebook-tracking'>link tracking protections</a>.",
+        "description": "message shown on a site where first party outgoing link tracking protections are enabled"
+    },
     "options_domain_list_tab": {
         "message": "Tracking Domains",
         "description": "This is an options page tab heading."
