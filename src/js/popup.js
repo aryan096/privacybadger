@@ -135,6 +135,11 @@ function init() {
     overlay.toggleClass('active');
   }
 
+  // show firstparty link tracking protection if we scrub links on this tab host
+  if (POPUP_DATA.tabHost == 'www.facebook.com' || POPUP_DATA.tabHost == 'www.google.com') {
+    $("#instructions_firstparty_protections").show();
+  }
+
   $("#error").on("click", function() {
     overlay.toggleClass('active');
   });
