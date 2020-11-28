@@ -37,7 +37,7 @@ var exports = {
   SEED_DATA_LOCAL_URL: chrome.runtime.getURL('data/seed.json'),
 
   // The number of 1st parties a 3rd party can be seen on
-  TRACKING_THRESHOLD: 3,
+  TRACKING_THRESHOLD: 9999999,
   MAX_COOKIE_ENTROPY: 12,
 
   DNT_POLICY_CHECK_INTERVAL: 1000, // one second
