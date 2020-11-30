@@ -12,17 +12,27 @@ This is a modified version of PrivacyBadger that allows the extension to capture
 
 	#### Firefox - 
 	a. Open the about:debugging page (type 'about:debugging' in the url box)
+	
 	b. click "This Firefox"
+	
 	c. click "Load Temporary Add-on"
+	
 	d. select any file in your extension's directory
+	
 	e. The extension will now be installed, and will stay until you restart Firefox.
+	
 
 	#### Chrome - 
 	a. Open the chrome://extensions page (type 'chrome://extensions' in the url box)
+	
 	b. Enable developer mode
+	
 	c. Click on Load Unpacked
+	
 	d. select the src folder
+	
 	e. The extension will be installed now.
+	
 
 4. Open PrivacyBadger settings 
 5. In General Settings, enable "Learn to block new trackers from your browsing"
