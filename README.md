@@ -1,32 +1,33 @@
-Privacy Badger [![Build Status](https://travis-ci.com/EFForg/privacybadger.svg?branch=master)](https://travis-ci.com/EFForg/privacybadger)
-===================
-Privacy Badger is a browser extension that automatically learns to block invisible trackers. Instead of keeping lists of what to block, Privacy Badger automatically discovers trackers based on their behavior.
+# Privacy Badger without blocking but all the tracking
 
-Privacy Badger sends the [Global Privacy Control](https://globalprivacycontrol.org/) signal to opt you out of data sharing and selling, and the [Do Not Track](https://www.eff.org/issues/do-not-track) signal to tell companies not to track you. If trackers ignore your wishes, Privacy Badger will learn to block them.
+This is a modified version of PrivacyBadger that allows the extension to capture information about all the trackers it sees in your browsing but doesn't block any of them. Disabling PrivacyBadger from blocking trackers is useful because the downloadable user data is then an accurate history of trackers found in your browsing. 
 
-Besides automatic tracker blocking, Privacy Badger comes with privacy features like [click-to-activate replacements](https://privacybadger.org/#How-does-Privacy-Badger-handle-social-media-widgets) for potentially useful trackers (video players, comments widgets, etc.), and link cleaning on [Facebook](https://www.eff.org/deeplinks/2018/05/privacy-badger-rolls-out-new-ways-fight-facebook-tracking) and [Google](https://www.eff.org/deeplinks/2018/10/privacy-badger-now-fights-more-sneaky-google-tracking).
+## Installation
+1. Clone this repo
+	`git clone https://github.com/aryan096/privacybadger.git`
+	
+2.  Remove any previous install of PrivacyBadger you might have on Firefox or Chrome
 
-To learn more, see [the FAQ on Privacy Badger's homepage](https://privacybadger.org/#faq).
+3. Install this unpackaged version of PrivacyBadger in either Firefox or Chrome 
+
+	#### Firefox - 
+	a. Open the about:debugging page (type 'about:debugging' in the url box)
+	b. click "This Firefox"
+	c. click "Load Temporary Add-on"
+	d. select any file in your extension's directory
+	e. The extension will now be installed, and will stay until you restart Firefox.
+
+	#### Chrome - 
+	a. Open the chrome://extensions page (type 'chrome://extensions' in the url box)
+	b. Enable developer mode
+	c. Click on Load Unpacked
+	d. select the src folder
+	e. The extension will be installed now.
+
+4. Open PrivacyBadger settings 
+5. In General Settings, enable "Learn to block new trackers from your browsing"
+6. In General Settings, disable "Send websites "Global Privacy Control" and "Do Not Track" signals".
+7. In Manage Data, remove all tracking domains
+8. You're done! Now go browse around and when you're ready, go to Manage Data and export user data. You should now have a .json file with a history of all the trackers that were found throughout your browsing mapped to the websites they were found on. 
 
 
-## Contributing
-
-We're glad you want to help! Please see [our contributor guide](/CONTRIBUTING.md).
-
-This project is governed by [EFF's Public Projects Code of Conduct](https://www.eff.org/pages/eppcode).
-
-
-## Getting in touch
-
-Besides using [our GitHub issue tracker](https://github.com/EFForg/privacybadger/issues), you could [send us an email](mailto:extension-devs@eff.org), or join the [Privacy Badger mailing list](https://lists.eff.org/mailman/listinfo/privacybadger).
-
-We also hold public meetings using [Jitsi audio conferencing](https://meet.jit.si/PoliteBadgersSingEuphoricly):
-- Mondays at 10:30 AM PST
-- Thursdays at 11:30 AM PST
-
-
-## License
-
-Privacy Badger is licensed under the GPLv3. See [LICENSE](/LICENSE) for more details.
-
-Privacy Badger is a project of the [Electronic Frontier Foundation](https://www.eff.org).
